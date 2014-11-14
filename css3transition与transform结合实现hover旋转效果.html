@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>css3transition与transform结合实现hover旋转效果</title>
+    <meta http-equiv="content-type" content="text/html" charset="utf-8"/>
+    <style>
+        a.abcr_close{
+            background-color: #3a7500;
+            color: #ffffff;
+            font-size: 25px;
+            line-height: 24px;
+            height: 25px;
+            display: inline-block;
+            vertical-align: text-top;
+            margin-right: 5px;
+            width: 25px;
+            text-align: center;
+            text-decoration: none;
+            transition: all 0.3s ease-in-out 0s;
+        }
+        a.abcr_close:hover{
+            transform:rotate(360deg);
+            -webkit-transform:rotate(360deg);
+            -moz-transform:rotate(360deg);
+            -ms-transform:rotate(360deg);
+            -o-transform:rotate(360deg);
+        }
+    </style>
+</head>
+<body>
+<a href="javascript:void (0)" class="abcr_close">×</a>
+</body>
+</html>
